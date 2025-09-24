@@ -1,5 +1,5 @@
 from httpx import Client
-from pydantic import BaseModel
+from pydantic import BaseModel, EmailStr
 from typing import TypedDict
 
 from clients.autheentication.authentication_client import AuthenticationClient, get_authenticated_client
@@ -7,7 +7,7 @@ from clients.autheentication.aunthentication_schema import LoginRequestSchema
 
 
 class AuthenticationUserSchema(BaseModel):
-    email: str
+    email: EmailStr
     password: str
 
 def get_private_http_client(user: AuthenticationUserSchema) -> Client:
