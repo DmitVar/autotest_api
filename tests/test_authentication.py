@@ -1,20 +1,17 @@
 from http import HTTPStatus
 import pytest
 
-from clients.autheentication.authentication_client import AuthenticationClient
-from clients.users.public_users_client import PublicUsersClient
-from clients.autheentication.aunthentication_schema import LoginRequestSchema, LoginResponseSchema
-from clients.users.users_schema import CreateUserRequestSchema
-from tests.conftest import UserFixture
+from clients.authentication.authentication_client import AuthenticationClient
+from clients.authentication.aunthentication_schema import LoginRequestSchema, LoginResponseSchema
+from fixtures.users import UserFixture
 from tools.assertions.base import assert_status_code
 from tools.assertions.schema import validate_json_schema
-from clients.autheentication.authentication import assert_login_response
+from clients.authentication.authentication import assert_login_response
 
 
 @pytest.mark.regression
 @pytest.mark.authentication
 def test_login(function_user: UserFixture, authentication_client: AuthenticationClient):
-
     request = LoginRequestSchema(
         email=function_user.email,
         password=function_user.password

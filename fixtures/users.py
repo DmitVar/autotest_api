@@ -3,9 +3,8 @@ from pydantic import BaseModel, EmailStr
 
 from clients.private_http_builder import AuthenticationUserSchema
 from clients.users.private_users_client import PrivateUsersClient, get_private_users_client
-from clients.users.public_users_client import get_public_users_client, PublicUsersClient
-from clients.autheentication.authentication_client import AuthenticationClient, get_authenticated_client
-from clients.users.users_schema import UserSchema, CreateUserRequestSchema, CreateUserResponseSchema
+from clients.users.public_users_client import PublicUsersClient, get_public_users_client
+from clients.users.users_schema import CreateUserRequestSchema, CreateUserResponseSchema
 
 
 class UserFixture(BaseModel):
@@ -28,10 +27,6 @@ class UserFixture(BaseModel):
 @pytest.fixture
 def public_users_client() -> PublicUsersClient:
     return get_public_users_client()
-
-@pytest.fixture
-def authentication_client() -> AuthenticationClient:
-    return get_authenticated_client()
 
 @pytest.fixture
 def function_user(public_users_client) -> UserFixture:

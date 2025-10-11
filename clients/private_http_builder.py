@@ -2,8 +2,8 @@ from httpx import Client
 from pydantic import BaseModel, EmailStr
 from typing import TypedDict
 
-from clients.autheentication.authentication_client import AuthenticationClient, get_authenticated_client
-from clients.autheentication.aunthentication_schema import LoginRequestSchema
+from clients.authentication.authentication_client import AuthenticationClient, get_authentication_client
+from clients.authentication.aunthentication_schema import LoginRequestSchema
 
 
 class AuthenticationUserSchema(BaseModel):
@@ -16,7 +16,7 @@ def get_private_http_client(user: AuthenticationUserSchema) -> Client:
     :param user: Объект AuthenticationUserSchema с email и паролем пользователя.
     :return: Готовый к использованию объект httpx.Client с установленным заголовком Authorization.
     """
-    authenticated_client = get_authenticated_client()
+    authenticated_client = get_authentication_client()
     login_request = LoginRequestSchema(email=user.email, password=user.password)
 
     login_response = authenticated_client.login(login_request)
