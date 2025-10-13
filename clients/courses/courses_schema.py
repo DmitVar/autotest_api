@@ -41,12 +41,21 @@ class CourseSchema(BaseModel):
     max_score: int = Field(alias="maxScore")
     min_score: int = Field(alias="minScore")
     description: str
-    previewFile: FileSchema
+    preview_file: FileSchema = Field(alias="previewFile")
     estimated_time: str = Field(alias="estimatedTime")
-    createdByUser: UserSchema
+    created_by_user: UserSchema = Field(alias="createdByUser")
 
 
 class CreateCourseResponseSchema(BaseModel):
     """Описание структуры ответа создания курса"""
     course: CourseSchema
 
+
+class UpdateCourseResponseSchema(BaseModel):
+    """Описание структуры ответа обновления курса"""
+    course: CourseSchema
+
+
+class GetCoursesResponseSchema(BaseModel):
+    """Описание структуры ответа на получение списка курсов."""
+    courses: list[CourseSchema]

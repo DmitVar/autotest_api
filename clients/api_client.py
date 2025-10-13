@@ -45,7 +45,7 @@ class APIClient:
         :param json: Данные для обновления в формате JSON.
         :return: Объект Response с данными ответа.
         """
-        return self.client.post(url, json=json)
+        return self.client.patch(url, json=json)
 
     def delete(self, url: URL | str) -> Response:
         """

@@ -34,22 +34,22 @@ class CourseClient(APIClient):
         """
         return self.post("/courses", json=request.model_dump(by_alias=True))
 
-    def update_course_api(self, request: UpdateCoursesRequestSchema, curse_id: str) -> Response:
+    def update_course_api(self, request: UpdateCoursesRequestSchema, course_id: str) -> Response:
         """
         Метод обновления курса.
         :param course_id: Идентификатор курса.
         :param request: Словарь с title, maxScore, minScore, description, estimatedTime.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.patch(f'/courses/{curse_id}', json=request.model_dump(by_alias=True))
+        return self.patch(f'/courses/{course_id}', json=request.model_dump(by_alias=True))
 
-    def delete_courses_api(self, curse_id: str) -> Response:
+    def delete_courses_api(self, course_id: str) -> Response:
         """
         Метод удаления курса.
         :param course_id: Идентификатор курса.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.delete(f'/courses/{curse_id}')
+        return self.delete(f'/courses/{course_id}')
 
     def create_course(self, request: CreateCourseRequestSchema)->CreateCourseResponseSchema:
         """
