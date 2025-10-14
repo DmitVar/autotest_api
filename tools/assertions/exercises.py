@@ -4,6 +4,12 @@ from tools.assertions.base import assert_equal
 
 
 def assert_exercise(actual: ExerciseSchema, expected: ExerciseSchema):
+    """
+    Проверяет, что фактические данные задания соответствуют ожидаемым.
+    :param actual: Фактические данные задания.
+    :param expected: Ожидаемые данные задания.
+    :raises AssertionError: Если хотя бы одно поле не совпадает.
+    """
     assert_equal(actual.id, expected.id, 'id')
     assert_equal(actual.title, expected.title, 'title')
     assert_equal(actual.course_id, expected.course_id, 'course_id')
