@@ -29,7 +29,7 @@ class ExercisesClient(APIClient):
         :param exercise_id: Идентификатор задания.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get(f"/api/v1/exercises/{exercise_id}")
+        return self.get(f"/exercises/{exercise_id}")
 
     def create_exercise_api(self, request: CreateExerciseRequestShema) -> Response:
         """
@@ -60,18 +60,39 @@ class ExercisesClient(APIClient):
         return self.delete(f"/exercises/{exercise_id}")
 
     def get_exercises(self, query: GetExercisesQuerySchema) -> GetExercisesResponseSchema:
+        """
+        Метод получения всех заданий
+        :param query: Идентификатор курса
+        :return: Ответ от сервера в виде GetExercisesResponseSchema
+        """
         response = self.get_exercises_api(query)
         return GetExercisesResponseSchema.model_validate_json(response.text)
 
     def get_exercise(self, exercise_id: str) -> GetExercisesResponseSchema:
+        """
+        Метод получения задания
+        :param exercise_id: Идентификатор задания
+        :return: Ответ от сервера в виде GetExercisesResponseSchema
+        """
         response = self.get_exercise_api(exercise_id)
         return GetExercisesResponseSchema.model_validate_json(response.text)
 
     def create_exercise(self, request: CreateExerciseRequestShema) -> CreateExerciseResponseShema:
+        """
+        Метод создания задания
+        :param request: CreateExerciseRequestShema  title, course_id, max_score, min_score, order_index, description, estimated_time
+        :return: Ответ от сервера в виде CreateExerciseResponseShema
+        """
         response = self.create_exercise_api(request)
         return CreateExerciseResponseShema.model_validate_json(response.text)
 
     def update_exercise(self, exercise_id: str, request: UpdateExerciseRequestSchema) -> UpdateExerciseResponseShema:
+        """
+        Метод для обновления задания
+        :param exercise_id: Идентификатор задания
+        :param request: UpdateExerciseRequestSchema title, course_id, max_score, min_score, order_index, description, estimated_time
+        :return:
+        """
         response = self.update_exercise_api(exercise_id, request)
         return UpdateExerciseResponseShema.model_validate_json(response.text)
 

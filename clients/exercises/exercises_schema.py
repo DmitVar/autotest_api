@@ -79,3 +79,9 @@ class UpdateExerciseResponseShema(BaseModel):
     Описание структуры ответа обновления задания.
     """
     exercise: ExerciseSchema
+
+class GetExerciseResponseShema(BaseModel):
+    """
+    Описание структуры ответа получения задания.
+    """
+    exercise: ExerciseSchema
