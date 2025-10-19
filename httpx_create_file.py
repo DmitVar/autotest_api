@@ -24,8 +24,8 @@ authentication_user_data = authentication_user_response.json()
 create_files_headers = {"Authorization": f"Bearer {authentication_user_data['token']['accessToken']}"}
 crete_file_response = client.post(
     "/files",
-    data={"filename": "butterfly.png", "directory": "images"},
-    files={"upload_file": open("./testdata/files/butterfly.png", "rb")},
+    data={"filename": "image.png", "directory": "images"},
+    files={"upload_file": open("testdata/files/image.png", "rb")},
     headers=create_files_headers
 )
 crete_file_data = crete_file_response.json()

@@ -8,7 +8,7 @@ from clients.files.files_schema import CreateFileRequestSchema, CreateFileRespon
 
 class FilesClient(APIClient):
     """
-    Клиент для работы с /files
+    Клиент для работы с /api/v1/files
     """
 
     @allure.step('Get file by id {file_id}')
@@ -18,7 +18,7 @@ class FilesClient(APIClient):
         :param file_id: Идентификатор файла.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get(f'/files/{file_id}')
+        return self.get(f'/api/v1/files/{file_id}')
 
     @allure.step('Create file')
     def create_file_api(self, request: CreateFileRequestSchema) -> Response:
@@ -27,9 +27,9 @@ class FilesClient(APIClient):
         :param request: Словарь с filename, directory, upload_file.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.post(f'/files',
+        return self.post(f'/api/v1/files',
                          data=request.model_dump(by_alias=True, exclude={'upload_file'}),
-                         files={"upload_file": open(request.upload_file, "rb")}
+                         files={"upload_file": request.upload_file.read_bytes()}
                          )
 
     @allure.step('Delete file by id {file_id}')
@@ -39,7 +39,7 @@ class FilesClient(APIClient):
         :param file_id: Идентификатор файла.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.delete(f'/files/{file_id}')
+        return self.delete(f'/api/v1/files/{file_id}')
 
     def create_file(self, request: CreateFileRequestSchema) -> CreateFileResponseSchema:
         """

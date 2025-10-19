@@ -17,7 +17,7 @@ class PrivateUsersClient(APIClient):
         Метод возвращает сведения о пользователе.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get("/users/me")
+        return self.get("/api/v1/users/me")
 
     @allure.step('Get user by id {user_id}')
     def get_user_api(self, user_id: str) -> Response:
@@ -26,7 +26,7 @@ class PrivateUsersClient(APIClient):
         :param user_id:
         :return:Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get(f"/users/{user_id}")
+        return self.get(f"/api/v1/users/{user_id}")
 
     @allure.step('Update user by id {user_id}')
     def update_user_api(self, user_id: str, request: UpdateUserRequestSchema) -> Response:
@@ -36,7 +36,7 @@ class PrivateUsersClient(APIClient):
         :param request: Словарь с одним или несколькими корректируемыми параметрами из: email, lastName, firstName, middleName
         :return:Ответ от сервера в виде объекта httpx.Response
         """
-        return self.patch(f"/users/{user_id}", json=request.model_dump(by_alias=True))
+        return self.patch(f"/api/v1/users/{user_id}", json=request.model_dump(by_alias=True))
 
     @allure.step('Delete user by id {user_id}')
     def delete_user_api(self, user_id: str) -> Response:
@@ -45,7 +45,7 @@ class PrivateUsersClient(APIClient):
         :param user_id: идентификатор пользователя
         :return:Ответ от сервера в виде объекта httpx.Response
         """
-        return self.delete(f"/users/{user_id}")
+        return self.delete(f"/api/v1/users/{user_id}")
 
     def get_user(self, user_id: str) -> GetUserResponseSchema:
         """

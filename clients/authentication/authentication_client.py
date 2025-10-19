@@ -9,7 +9,7 @@ from clients.authentication.aunthentication_schema import LoginRequestSchema, Lo
 
 class AuthenticationClient(APIClient):
     """
-    Клиент для работы с /authentication
+    Клиент для работы с /api/v1/authentication
 
     """
 
@@ -20,7 +20,7 @@ class AuthenticationClient(APIClient):
         :param request: Словарь с email и password.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.post("/authentication/login", json=request.model_dump(by_alias=True))
+        return self.post("/api/v1/authentication/login", json=request.model_dump(by_alias=True))
 
     @allure.step('Refresh authentication token')
     def refresh_api(self, request: RefreshRequestSchema) -> Response:
@@ -29,7 +29,7 @@ class AuthenticationClient(APIClient):
         :param request: Словарь с refreshToken.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.post("/authentication/refresh", json=request.model_dump(by_alias=True))
+        return self.post("/api/v1/authentication/refresh", json=request.model_dump(by_alias=True))
 
     def login(self, request: LoginRequestSchema) -> LoginResponseSchema:
         response = self.login_api(request)

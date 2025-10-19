@@ -9,7 +9,7 @@ from clients.courses.courses_schema import GetCoursesQuerySchema, CreateCourseRe
 
 class CourseClient(APIClient):
     """
-    Клиент для работы с /courses
+    Клиент для работы с /api/v1/courses
     """
 
     @allure.step('Get all courses')
@@ -19,7 +19,7 @@ class CourseClient(APIClient):
         :param query: Словарь с userId.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get("/courses", params=query.model_dump(by_alias=True))
+        return self.get("/api/v1/courses", params=query.model_dump(by_alias=True))
 
     @allure.step('Get course by id {course_id}')
     def get_course_api(self, course_id: str) -> Response:
@@ -28,7 +28,7 @@ class CourseClient(APIClient):
         :param course_id: Идентификатор курса.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get(f'/courses/{course_id}')
+        return self.get(f'/api/v1/courses/{course_id}')
 
     @allure.step('Create course')
     def create_courses_api(self, request: CreateCourseRequestSchema) -> Response:
@@ -38,7 +38,7 @@ class CourseClient(APIClient):
         previewFileId, createdByUserId.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.post("/courses", json=request.model_dump(by_alias=True))
+        return self.post("/api/v1/courses", json=request.model_dump(by_alias=True))
 
     @allure.step('Update course by id {course_id}')
     def update_course_api(self, request: UpdateCoursesRequestSchema, course_id: str) -> Response:
@@ -48,7 +48,7 @@ class CourseClient(APIClient):
         :param request: Словарь с title, maxScore, minScore, description, estimatedTime.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.patch(f'/courses/{course_id}', json=request.model_dump(by_alias=True))
+        return self.patch(f'/api/v1/courses/{course_id}', json=request.model_dump(by_alias=True))
 
     @allure.step('Delete course by id {course_id}')
     def delete_courses_api(self, course_id: str) -> Response:
@@ -57,7 +57,7 @@ class CourseClient(APIClient):
         :param course_id: Идентификатор курса.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.delete(f'/courses/{course_id}')
+        return self.delete(f'/api/v1/courses/{course_id}')
 
     def create_course(self, request: CreateCourseRequestSchema) -> CreateCourseResponseSchema:
         """

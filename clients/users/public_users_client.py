@@ -8,7 +8,7 @@ from clients.users.users_schema import CreateUserRequestSchema, CreateUserRespon
 
 class PublicUsersClient(APIClient):
     """
-    Клиент для работы с /users
+    Клиент для работы с /api/v1/users
     """
     @allure.step('Create user')
     def create_user_api(self, request: CreateUserRequestSchema) -> Response:
@@ -17,7 +17,7 @@ class PublicUsersClient(APIClient):
         :param request: Словарь с email, password, lastName, firstName, middleName.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.post(url="/users", json=request.model_dump(by_alias=True))
+        return self.post(url="/api/v1/users", json=request.model_dump(by_alias=True))
 
     def create_user(self, request: CreateUserRequestSchema) -> CreateUserResponseSchema:
         """
