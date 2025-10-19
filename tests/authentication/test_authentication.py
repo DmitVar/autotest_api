@@ -12,7 +12,7 @@ from tools.allure.stories import AllureStory
 from tools.allure.tags import AllureTags
 from tools.assertions.base import assert_status_code
 from tools.assertions.schema import validate_json_schema
-from clients.authentication.authentication import assert_login_response
+from tools.assertions.authentication import assert_login_response
 
 
 @pytest.mark.regression

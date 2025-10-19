@@ -1,14 +1,18 @@
+import allure
 from httpx import Response
 
 from clients.api_client import APIClient
 from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
-from clients.courses.courses_schema import GetCoursesQuerySchema, CreateCourseRequestSchema, UpdateCoursesRequestSchema, CreateCourseResponseSchema
+from clients.courses.courses_schema import GetCoursesQuerySchema, CreateCourseRequestSchema, UpdateCoursesRequestSchema, \
+    CreateCourseResponseSchema
+
 
 class CourseClient(APIClient):
     """
     Клиент для работы с /courses
     """
 
+    @allure.step('Get all courses')
     def get_courses_api(self, query: GetCoursesQuerySchema) -> Response:
         """
         Метод получения списка курсов.
@@ -17,6 +21,7 @@ class CourseClient(APIClient):
         """
         return self.get("/courses", params=query.model_dump(by_alias=True))
 
+    @allure.step('Get course by id {course_id}')
     def get_course_api(self, course_id: str) -> Response:
         """
         Метод получения курса.
@@ -25,6 +30,7 @@ class CourseClient(APIClient):
         """
         return self.get(f'/courses/{course_id}')
 
+    @allure.step('Create course')
     def create_courses_api(self, request: CreateCourseRequestSchema) -> Response:
         """
         Метод создания курса.
@@ -34,6 +40,7 @@ class CourseClient(APIClient):
         """
         return self.post("/courses", json=request.model_dump(by_alias=True))
 
+    @allure.step('Update course by id {course_id}')
     def update_course_api(self, request: UpdateCoursesRequestSchema, course_id: str) -> Response:
         """
         Метод обновления курса.
@@ -43,6 +50,7 @@ class CourseClient(APIClient):
         """
         return self.patch(f'/courses/{course_id}', json=request.model_dump(by_alias=True))
 
+    @allure.step('Delete course by id {course_id}')
     def delete_courses_api(self, course_id: str) -> Response:
         """
         Метод удаления курса.
@@ -51,7 +59,7 @@ class CourseClient(APIClient):
         """
         return self.delete(f'/courses/{course_id}')
 
-    def create_course(self, request: CreateCourseRequestSchema)->CreateCourseResponseSchema:
+    def create_course(self, request: CreateCourseRequestSchema) -> CreateCourseResponseSchema:
         """
         Метод создает курс.
         :param request:
@@ -59,6 +67,7 @@ class CourseClient(APIClient):
         """
         response = self.create_courses_api(request)
         return CreateCourseResponseSchema.model_validate_json(response.text)
+
 
 def get_courses_client(user: AuthenticationUserSchema) -> CourseClient:
     """
