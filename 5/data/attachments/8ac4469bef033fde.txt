@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIxVDIwOjE4OjI0LjgwNjk4NyIsInVzZXJfaWQiOiI2NTUzY2FjZS1hNDRiLTRiNzctYTZlZi1jMWZiOWZiMDM5NDYifQ.d7WHQJyndlESM1DMOzoOetNTQFaROMel_ZhDJpgSLPw' \
+ -H 'content-length: 256' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Answer read big page idea.","maxScore":75,"minScore":17,"description":"Loss bad stage campaign collection.","estimatedTime":"3 weeks","previewFileId":"7f3ebf97-f27f-4f0b-b9a2-2b4a4b666138","createdByUserId":"6553cace-a44b-4b77-a6ef-c1fb9fb03946"}

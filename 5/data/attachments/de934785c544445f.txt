@@ -1,0 +1,26 @@
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:23 Make GET request to http://localhost:8000/api/v1/exercises?courseId=a7f178a8-e36e-4053-ac59-37bee59b9973
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/exercises?courseId=a7f178a8-e36e-4053-ac59-37bee59b9973
+INFO     BASE_ASSERTION:base.py:17 Check that status code equals to "200"
+INFO     EXERCISES_ASSERTIONS:exercises.py:104 Checking get all exercises response
+INFO     BASE_ASSERTION:base.py:67 Check that length of "exercises" equals to 1
+INFO     EXERCISES_ASSERTIONS:exercises.py:22 Checking exercise
+INFO     BASE_ASSERTION:base.py:34 Check that "id" equals to 85e254ee-51aa-4f9b-a6ac-d92fc5b9e2c7
+INFO     BASE_ASSERTION:base.py:34 Check that "title" equals to Concern hit forward method during.
+INFO     BASE_ASSERTION:base.py:34 Check that "course_id" equals to a7f178a8-e36e-4053-ac59-37bee59b9973
+INFO     BASE_ASSERTION:base.py:34 Check that "max_score" equals to 51
+INFO     BASE_ASSERTION:base.py:34 Check that "min_score" equals to 3
+INFO     BASE_ASSERTION:base.py:34 Check that "order_index" equals to 70
+INFO     BASE_ASSERTION:base.py:34 Check that "description" equals to Increase such clearly much describe key head art. One town only thank. Foot think a management suggest.
+Establish despite region human. Hand coach current. Would daughter few establish end man.
+INFO     BASE_ASSERTION:base.py:34 Check that "estimated_time" equals to 9 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validating JSON schema

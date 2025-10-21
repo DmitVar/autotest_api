@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIxVDIwOjE4OjI3LjI2NDYyOSIsInVzZXJfaWQiOiI4ZDZhZWU3MC1iM2EyLTRiNzgtOGE5OS1kZjA3MDhlYTJjYWEifQ.jH6t_KHKWUNmeAyCSjyLXUTya8SBaOI1X_gO7khv-Mk' \
+ -H 'content-length: 269' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Wait several situation here of summer move.","maxScore":69,"minScore":16,"description":"Identify throw onto pass build.","estimatedTime":"7 weeks","previewFileId":"f016f473-0381-4134-aa2b-7c91a2d8a444","createdByUserId":"8d6aee70-b3a2-4b78-8a99-df0708ea2caa"}

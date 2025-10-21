@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIxVDIwOjE4OjI0LjIxNzcyOSIsInVzZXJfaWQiOiIzN2YxYmI1MS1iMDZlLTQ2YWYtOWRmYi1iYjU1YjUwZmFiNTIifQ.hAklP4GDcE7ap6A49wcpNsv9FCltf6TCAzhlu9xhIdg' \
+ -H 'content-length: 267' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Wide likely operation remember.","maxScore":88,"minScore":29,"description":"Marriage room score find reduce discover.","estimatedTime":"4 weeks","previewFileId":"5c28cff0-30ee-4cbb-a781-1167ecaa964b","createdByUserId":"37f1bb51-b06e-46af-9dfb-bb55b50fab52"}

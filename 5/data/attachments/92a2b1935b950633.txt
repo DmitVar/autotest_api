@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIxVDIwOjE4OjI3LjI2NDYyOSIsInVzZXJfaWQiOiI4ZDZhZWU3MC1iM2EyLTRiNzgtOGE5OS1kZjA3MDhlYTJjYWEifQ.jH6t_KHKWUNmeAyCSjyLXUTya8SBaOI1X_gO7khv-Mk' \
+ -H 'content-length: 376' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Concern hit forward method during.","courseId":"a7f178a8-e36e-4053-ac59-37bee59b9973","maxScore":51,"minScore":3,"orderIndex":70,"description":"Increase such clearly much describe key head art. One town only thank. Foot think a management suggest.\nEstablish despite region human. Hand coach current. Would daughter few establish end man.","estimatedTime":"9 weeks"}

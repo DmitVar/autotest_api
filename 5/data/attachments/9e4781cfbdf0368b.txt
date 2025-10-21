@@ -1,0 +1,18 @@
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTION:base.py:17 Check that status code equals to "200"
+INFO     COURSES_ASSERTIONS:courses.py:71 Check create course response
+INFO     BASE_ASSERTION:base.py:34 Check that "title" equals to Maintain imagine nature almost pull Mrs ten.
+INFO     BASE_ASSERTION:base.py:34 Check that "max_score" equals to 86
+INFO     BASE_ASSERTION:base.py:34 Check that "min_score" equals to 5
+INFO     BASE_ASSERTION:base.py:34 Check that "description" equals to Fund machine number speak generation spend play.
+INFO     BASE_ASSERTION:base.py:34 Check that "estimated_time" equals to 4 weeks
+INFO     BASE_ASSERTION:base.py:34 Check that "preview_file_id" equals to ba24d709-36d6-42f3-ba14-2b9dbc120be4
+INFO     BASE_ASSERTION:base.py:34 Check that "created_by_user_id" equals to cc9e4366-871f-4f0b-8a71-e4da0fcd54eb
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validating JSON schema

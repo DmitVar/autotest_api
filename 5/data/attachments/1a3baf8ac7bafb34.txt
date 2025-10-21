@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIxVDIwOjE4OjI2Ljk5MTkyMSIsInVzZXJfaWQiOiJmNjBkMzNmYy1iNGI1LTRlOGYtYjNkZi0zMDUwZjVjYzk0YTIifQ.5vF9kRmx3Lox2GEywjMyx8r6JAaeH9fQHh2Ik4-SP7Q' \
+ -H 'content-length: 321' \
+ -H 'content-type: application/json' \
+ -d '{"title":"End argue almost let put serve lot once.","courseId":"0acf34b7-cb53-4bb9-96da-20370d57b2be","maxScore":82,"minScore":27,"orderIndex":32,"description":"Here information return physical treatment world. Quickly happy nearly billion. Less well perhaps project father beyond foreign way.","estimatedTime":"2 weeks"}

@@ -1,0 +1,22 @@
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:23 Make PATCH request to http://localhost:8000/api/v1/exercises/513982d2-ffa8-4fee-9154-6a6e91774438
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/exercises/513982d2-ffa8-4fee-9154-6a6e91774438
+INFO     BASE_ASSERTION:base.py:17 Check that status code equals to "200"
+INFO     EXERCISES_ASSERTIONS:exercises.py:77 Checking update exercise response
+INFO     BASE_ASSERTION:base.py:34 Check that "title" equals to Accept development none between yourself world lawyer.
+INFO     BASE_ASSERTION:base.py:34 Check that "max_score" equals to 81
+INFO     BASE_ASSERTION:base.py:34 Check that "min_score" equals to 6
+INFO     BASE_ASSERTION:base.py:34 Check that "order_index" equals to 74
+INFO     BASE_ASSERTION:base.py:34 Check that "description" equals to Exist very enter the break music. Place stand enough cell heart. Least American want meeting require around.
+Gun lay spend focus. Show standard who. Against PM effect fly expect federal.
+INFO     BASE_ASSERTION:base.py:34 Check that "estimated_time" equals to 6 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validating JSON schema

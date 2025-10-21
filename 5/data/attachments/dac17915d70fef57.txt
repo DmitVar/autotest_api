@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIxVDIwOjE4OjI2Ljk5MTkyMSIsInVzZXJfaWQiOiJmNjBkMzNmYy1iNGI1LTRlOGYtYjNkZi0zMDUwZjVjYzk0YTIifQ.5vF9kRmx3Lox2GEywjMyx8r6JAaeH9fQHh2Ik4-SP7Q' \
+ -H 'content-length: 279' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Important couple not image on picture.","maxScore":77,"minScore":2,"description":"Participant test effort forward model marriage.","estimatedTime":"4 weeks","previewFileId":"144b0807-2d4d-4473-97e5-c64f57386f9d","createdByUserId":"f60d33fc-b4b5-4e8f-b3df-3050f5cc94a2"}

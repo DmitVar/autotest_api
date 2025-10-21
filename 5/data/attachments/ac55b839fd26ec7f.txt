@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIxVDIwOjE4OjIzLjYyODczMSIsInVzZXJfaWQiOiJjYzllNDM2Ni04NzFmLTRmMGItOGE3MS1lNGRhMGZjZDU0ZWIifQ.PHQbcTRBd3HgDIM9cDI0JqQph1yv7KiPzzdA2fSWGUk' \
+ -H 'content-length: 286' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Maintain imagine nature almost pull Mrs ten.","maxScore":86,"minScore":5,"description":"Fund machine number speak generation spend play.","estimatedTime":"4 weeks","previewFileId":"ba24d709-36d6-42f3-ba14-2b9dbc120be4","createdByUserId":"cc9e4366-871f-4f0b-8a71-e4da0fcd54eb"}
