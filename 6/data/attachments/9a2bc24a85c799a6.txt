@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIxVDIxOjM1OjE4LjQyNTQ0NSIsInVzZXJfaWQiOiIzNThlYWI1OS0yMWMxLTQ4YzYtOTViNi01YjhmOGY5NDMyMTUifQ.zcPHTFTbmLispRhVYhWP5p7RMDQwrUWGbi2oqT1ZSfA' \
+ -H 'content-length: 253' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Room fire challenge.","maxScore":62,"minScore":7,"description":"Bed without task listen teach computer.","estimatedTime":"1 weeks","previewFileId":"6b8f4e80-6375-4736-9c4b-9f6786881729","createdByUserId":"358eab59-21c1-48c6-95b6-5b8f8f943215"}

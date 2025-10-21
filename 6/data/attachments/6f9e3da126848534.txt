@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIxVDIxOjM1OjE5LjM3NDU0NiIsInVzZXJfaWQiOiIxMzljYjkyOS0zN2E0LTRlMGEtOTVkMC0zNzJjZmU1OTE0MzAifQ.KI6UWf216EMOyXI5bTQZ3-nHQLdbFdBlgoDkN-zR2kM' \
+ -H 'content-length: 279' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Ok firm local tell decade group.","maxScore":75,"minScore":27,"description":"And manager different miss her friend relationship.","estimatedTime":"10 weeks","previewFileId":"99b468b5-ec14-4fb8-8321-a78ab00f2227","createdByUserId":"139cb929-37a4-4e0a-95d0-372cfe591430"}

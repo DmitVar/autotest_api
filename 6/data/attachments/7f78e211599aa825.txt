@@ -1,0 +1,21 @@
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     BASE_ASSERTION:base.py:17 Check that status code equals to "200"
+INFO     EXERCISES_ASSERTIONS:exercises.py:41 Checking create exercise response
+INFO     BASE_ASSERTION:base.py:34 Check that "title" equals to Consider return each building particularly difficult care road.
+INFO     BASE_ASSERTION:base.py:34 Check that "course_id" equals to f9010558-40d9-4ab9-b6cf-a744d6262854
+INFO     BASE_ASSERTION:base.py:34 Check that "max_score" equals to 59
+INFO     BASE_ASSERTION:base.py:34 Check that "min_score" equals to 12
+INFO     BASE_ASSERTION:base.py:34 Check that "order_index" equals to 63
+INFO     BASE_ASSERTION:base.py:34 Check that "description" equals to Law ability show study. Which drive the.
+Worker system later husband common current tree give. Avoid again every office town they west.
+INFO     BASE_ASSERTION:base.py:34 Check that "estimated_time" equals to 3 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validating JSON schema

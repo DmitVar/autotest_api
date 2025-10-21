@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIxVDIxOjM1OjIwLjUzNzAxOSIsInVzZXJfaWQiOiJlZWJiMTk5OS05YWU0LTQ1NmEtODMwMi1iZGZlZTQzYTExMDEifQ.tPLbSBqYN_6FNaPITMxIJhXadrz12EiIGohkk_-AyvU' \
+ -H 'content-length: 268' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Structure near sister level.","maxScore":54,"minScore":17,"description":"Front policy sister hold field offer product.","estimatedTime":"3 weeks","previewFileId":"af7ad43e-2364-4255-8a62-8ae77c5977e1","createdByUserId":"eebb1999-9ae4-456a-8302-bdfee43a1101"}

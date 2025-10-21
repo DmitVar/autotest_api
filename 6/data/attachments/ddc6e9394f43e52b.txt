@@ -1,0 +1,18 @@
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     BASE_ASSERTION:base.py:17 Check that status code equals to "200"
+INFO     COURSES_ASSERTIONS:courses.py:71 Check create course response
+INFO     BASE_ASSERTION:base.py:34 Check that "title" equals to Ok firm local tell decade group.
+INFO     BASE_ASSERTION:base.py:34 Check that "max_score" equals to 75
+INFO     BASE_ASSERTION:base.py:34 Check that "min_score" equals to 27
+INFO     BASE_ASSERTION:base.py:34 Check that "description" equals to And manager different miss her friend relationship.
+INFO     BASE_ASSERTION:base.py:34 Check that "estimated_time" equals to 10 weeks
+INFO     BASE_ASSERTION:base.py:34 Check that "preview_file_id" equals to 99b468b5-ec14-4fb8-8321-a78ab00f2227
+INFO     BASE_ASSERTION:base.py:34 Check that "created_by_user_id" equals to 139cb929-37a4-4e0a-95d0-372cfe591430
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validating JSON schema

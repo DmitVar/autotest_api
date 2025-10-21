@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+ 'http://localhost:8000/api/v1/exercises/6ec45e3c-78c4-4e5b-a234-27073c2f7680' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIxVDIxOjM1OjIxLjQ3NDExNSIsInVzZXJfaWQiOiI5Mzk0NmVjNS01OTM3LTRlYTUtOTk0My0xNmFmZjY4OWNmODYifQ.oXKpmqjOdIgZ4IHDsbn1t8Nv5qr0Hg_brpx3sE-TcBw' \
+ -H 'content-length: 259' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Fly more left sing list same without.","maxScore":100,"minScore":11,"orderIndex":71,"description":"Often rock century system she staff far truth. Feel perhaps tend pay. White pressure position. Candidate leave stay civil.","estimatedTime":"5 weeks"}

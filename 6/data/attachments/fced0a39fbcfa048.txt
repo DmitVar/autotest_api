@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIxVDIxOjM1OjIxLjQ3NDExNSIsInVzZXJfaWQiOiI5Mzk0NmVjNS01OTM3LTRlYTUtOTk0My0xNmFmZjY4OWNmODYifQ.oXKpmqjOdIgZ4IHDsbn1t8Nv5qr0Hg_brpx3sE-TcBw' \
+ -H 'content-length: 270' \
+ -H 'content-type: application/json' \
+ -d '{"title":"If any than science leave reality.","maxScore":51,"minScore":20,"description":"Pretty TV anything rise kitchen daughter.","estimatedTime":"8 weeks","previewFileId":"75b2c27c-076a-4316-b8f8-ea3ed133dfb3","createdByUserId":"93946ec5-5937-4ea5-9943-16aff689cf86"}

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIxVDIxOjM1OjIyLjcyNTkzNCIsInVzZXJfaWQiOiI4MjMwNDVlOC0wNGYzLTRmODQtYjBmZi1kNDk1NDE4YjFhZTIifQ.Xrm1jvBonBrEb-F3oTCBPUfZ_2LH5SNtKa5QCK5DACk' \
+ -H 'content-length: 272' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Information sit beyond power may military letter.","maxScore":97,"minScore":13,"description":"Always strong while foreign.","estimatedTime":"6 weeks","previewFileId":"8456f695-019f-4494-bdd7-577122c3b741","createdByUserId":"823045e8-04f3-4f84-b0ff-d495418b1ae2"}
