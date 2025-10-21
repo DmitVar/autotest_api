@@ -13,15 +13,18 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v5
+
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: '3.11'
+
       - name: Clone test server repository
         run: git clone https://github.com/Nikita-Filonov/qa-automation-engineer-api-course.git
 
       - name: Install test server dependencies
         run: pip install -r qa-automation-engineer-api-course/requirements.txt
+
       - name: Start a test server
         env:
           APP_HOST: "http://localhost:8000"
@@ -40,13 +43,31 @@ jobs:
       - name: Run API tests with pytest and renerate Allure results
         run: |
           pytest -m regression --alluredir=allure-results --numprocesses 2
-      - name: Get Allure history
-        uses: actions/checkout@v5
+
+      - name: Upload Allure result
         if: always()
-        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results
+
+  publish-report:
+    if: always()
+    needs: [ run-tests ]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
         with:
           ref: gh-pages
           path: gh-pages
+
+      - name: Download Allure results
+        uses: actions/download-artifact@v4
+        with:
+          name: allure-results
+          path: allure-results
 
       - name: Generates Allure report with history
         uses: simple-elf/allure-report-action@v1.13
