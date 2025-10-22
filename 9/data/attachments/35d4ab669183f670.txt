@@ -1,0 +1,25 @@
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:23 Make GET request to http://localhost:8000/api/v1/exercises/2679c11e-c5a8-4c19-a63b-88eebabd6c04
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/exercises/2679c11e-c5a8-4c19-a63b-88eebabd6c04
+INFO     BASE_ASSERTION:base.py:17 Check that status code equals to "200"
+INFO     EXERCISES_ASSERTIONS:exercises.py:62 Checking get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:22 Checking exercise
+INFO     BASE_ASSERTION:base.py:34 Check that "id" equals to 2679c11e-c5a8-4c19-a63b-88eebabd6c04
+INFO     BASE_ASSERTION:base.py:34 Check that "title" equals to Travel factor trouble fund.
+INFO     BASE_ASSERTION:base.py:34 Check that "course_id" equals to a356dd85-cf90-4f71-a415-ee1c3bdd8054
+INFO     BASE_ASSERTION:base.py:34 Check that "max_score" equals to 64
+INFO     BASE_ASSERTION:base.py:34 Check that "min_score" equals to 2
+INFO     BASE_ASSERTION:base.py:34 Check that "order_index" equals to 25
+INFO     BASE_ASSERTION:base.py:34 Check that "description" equals to Serve smile charge. President maintain opportunity soon eight gas off. Among game heavy light across process.
+Three response college start cold agent. Could floor rule amount body.
+INFO     BASE_ASSERTION:base.py:34 Check that "estimated_time" equals to 7 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validating JSON schema

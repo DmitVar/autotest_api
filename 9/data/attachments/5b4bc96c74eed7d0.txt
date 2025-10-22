@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIyVDIwOjU3OjUyLjM1NDI1NCIsInVzZXJfaWQiOiJiNWE5Zjk0Zi0xOTMyLTQwNDQtOGFiMy0yMzI4MmJkNTJmM2YifQ.kpMvW59llHsLivrFX8E89b5QPRiIWz3EQxpeS36iYGs' \
+ -H 'content-length: 245' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Candidate her write let.","maxScore":84,"minScore":8,"description":"Expert worker million edge.","estimatedTime":"4 weeks","previewFileId":"43f1c3b2-5026-45b8-93d9-f5b78219e290","createdByUserId":"b5a9f94f-1932-4044-8ab3-23282bd52f3f"}

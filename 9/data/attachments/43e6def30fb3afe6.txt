@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIyVDIwOjU3OjUxLjM4MTI3NiIsInVzZXJfaWQiOiI0NTMxNDcwYS1hMmJlLTRhOTEtYjg2Yi1kYTU1NGUwYThhZGMifQ.6vrzQEQB9oV04tKulqmX2D9ugVc9z2jMOcMiMIPRFKI' \
+ -H 'content-length: 260' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Heavy remember eat choose.","courseId":"6f428331-6702-491e-aeee-0397afdf8cf3","maxScore":76,"minScore":29,"orderIndex":97,"description":"Response occur community born. Beyond house arrive agency. Market reach near travel.","estimatedTime":"10 weeks"}

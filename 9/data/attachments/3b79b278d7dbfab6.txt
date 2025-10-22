@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIyVDIwOjU3OjQ5LjI2ODM2NCIsInVzZXJfaWQiOiIyZWRhYmY5MS1mOTY0LTQyZjYtYWMwYi1hYTc1OGJjMTg3ZTIifQ.sk0uQdJzis4qLb1nWk1fI0txmOh6ABYVyV9yk7kPlS8' \
+ -H 'content-length: 254' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Serve million some.","maxScore":87,"minScore":9,"description":"Make then organization state your either.","estimatedTime":"1 weeks","previewFileId":"706ca21c-effe-4342-a154-7d227a9c2119","createdByUserId":"2edabf91-f964-42f6-ac0b-aa758bc187e2"}

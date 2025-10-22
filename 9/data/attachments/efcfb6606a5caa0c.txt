@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIyVDIwOjU3OjUzLjYxNjkwMCIsInVzZXJfaWQiOiJlN2Y0ZjZiMC00YWQxLTQ4MTgtYjJhMy1mZDg4YTJiMTEyYTgifQ.hp6NFcDWjyly4kHmrLL6XE34BDhvLKYaRZ_q3vY6MH0' \
+ -H 'content-length: 365' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Resource meeting decide investment democratic office social.","courseId":"90a5d0af-322f-406e-b59f-b2c967c665d0","maxScore":95,"minScore":23,"orderIndex":72,"description":"Stock community sing alone make.\nMemory exactly keep middle. Modern according lose western head thing. Girl significant thing center try student fact tell.","estimatedTime":"1 weeks"}

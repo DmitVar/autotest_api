@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIyVDIwOjU3OjUxLjEwODY0OCIsInVzZXJfaWQiOiJiOWQ5YjZiOS04OWU0LTQ5NTktYTVlNS0zZGQ2MGI1ZTU1YjAifQ.m5sValT7iOzaUAhOy6nPFci_7DIO046mBIIEb7oqq4s' \
+ -H 'content-length: 258' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Lay federal imagine need help.","maxScore":67,"minScore":9,"description":"Mr know make throughout discuss a.","estimatedTime":"6 weeks","previewFileId":"fcf0d130-0ece-4de4-b015-cc4371b200fc","createdByUserId":"b9d9b6b9-89e4-4959-a5e5-3dd60b5e55b0"}

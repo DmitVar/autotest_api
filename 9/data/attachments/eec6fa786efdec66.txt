@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIyVDIwOjU3OjUxLjM4MTI3NiIsInVzZXJfaWQiOiI0NTMxNDcwYS1hMmJlLTRhOTEtYjg2Yi1kYTU1NGUwYThhZGMifQ.6vrzQEQB9oV04tKulqmX2D9ugVc9z2jMOcMiMIPRFKI' \
+ -H 'content-length: 251' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Court modern leg cup stuff.","maxScore":75,"minScore":24,"description":"Issue determine career scene.","estimatedTime":"7 weeks","previewFileId":"9281236f-5a48-43f1-b826-b4dfb22abc5c","createdByUserId":"4531470a-a2be-4a91-b86b-da554e0a8adc"}

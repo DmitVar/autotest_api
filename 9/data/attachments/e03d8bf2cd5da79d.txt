@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+ 'http://localhost:8000/api/v1/courses/1101d72c-87ba-49b3-a9fd-f119ca17e607' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIyVDIwOjU3OjUxLjEwODY0OCIsInVzZXJfaWQiOiJiOWQ5YjZiOS04OWU0LTQ5NTktYTVlNS0zZGQ2MGI1ZTU1YjAifQ.m5sValT7iOzaUAhOy6nPFci_7DIO046mBIIEb7oqq4s' \
+ -H 'content-length: 156' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Recent sister when traditional well.","maxScore":55,"minScore":28,"description":"Gun market start general economy red.","estimatedTime":"8 weeks"}

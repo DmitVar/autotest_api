@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTEwLTIyVDIwOjU3OjUyLjYyODE2MiIsInVzZXJfaWQiOiI2Y2VjM2JkMS1jNDg1LTRmMzktYjlkMC1lODQzYWJiMjljMzkifQ.CRvLHtkd34YFsEkMiUUtn389SL1SKyBiKI1lWNiuy2g' \
+ -H 'content-length: 356' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Travel factor trouble fund.","courseId":"a356dd85-cf90-4f71-a415-ee1c3bdd8054","maxScore":64,"minScore":2,"orderIndex":25,"description":"Serve smile charge. President maintain opportunity soon eight gas off. Among game heavy light across process.\nThree response college start cold agent. Could floor rule amount body.","estimatedTime":"7 weeks"}
