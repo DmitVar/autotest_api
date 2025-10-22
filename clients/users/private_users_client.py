@@ -3,6 +3,7 @@ from httpx import Response
 
 from clients.api_client import APIClient
 from tools.routes import APIRoutes
+from clients.api_coverage import tracker
 from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
 from clients.users.users_schema import UpdateUserRequestSchema, GetUserResponseSchema
 
@@ -13,6 +14,7 @@ class PrivateUsersClient(APIClient):
     """
 
     @allure.step('Get user me')
+    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}/me")
     def get_user_me_api(self) -> Response:
         """
         Метод возвращает сведения о пользователе.
@@ -21,6 +23,7 @@ class PrivateUsersClient(APIClient):
         return self.get(f"{APIRoutes.USERS}/me")
 
     @allure.step('Get user by id {user_id}')
+    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}/{{user_id}}")
     def get_user_api(self, user_id: str) -> Response:
         """
         Метод возвращает сведения о пользователе по id.
@@ -30,6 +33,7 @@ class PrivateUsersClient(APIClient):
         return self.get(f"{APIRoutes.USERS}/{user_id}")
 
     @allure.step('Update user by id {user_id}')
+    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}/{{user_id}}")
     def update_user_api(self, user_id: str, request: UpdateUserRequestSchema) -> Response:
         """
         Метод именяет сведения о пользователе.
@@ -40,6 +44,7 @@ class PrivateUsersClient(APIClient):
         return self.patch(f"{APIRoutes.USERS}/{user_id}", json=request.model_dump(by_alias=True))
 
     @allure.step('Delete user by id {user_id}')
+    @tracker.track_coverage_httpx(f"{APIRoutes.USERS}/{{user_id}}")
     def delete_user_api(self, user_id: str) -> Response:
         """
         Метод удаляет пользователя по id.
