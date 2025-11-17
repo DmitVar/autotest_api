@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTE3VDE3OjQ4OjExLjI4ODYwNCIsInVzZXJfaWQiOiIwOGEyYjhkNy1kNDFiLTQ0Y2MtODdiNC0xMTcxZjZkNDJiM2YifQ.f73tr7GSzk4-atOA4B77ikN4mGsH3fk1kCyZLUOCjM0' \
+ -H 'content-length: 251' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Brother rise assume player.","courseId":"363f61c8-d047-4209-a593-035630daa688","maxScore":96,"minScore":27,"orderIndex":62,"description":"Operation fight cold want oil. She themselves behind perhaps specific seek.","estimatedTime":"2 weeks"}

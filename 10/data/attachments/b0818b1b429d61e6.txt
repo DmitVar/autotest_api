@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+ 'http://localhost:8000/api/v1/courses/03165ae0-056b-4aa1-af5e-7f96a0bcd3da' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTE3VDE3OjQ4OjA5LjQ4MTgyNyIsInVzZXJfaWQiOiJhYjllNzc2Yy1hYTBjLTQ5NWUtYjA3OS0xMWEwNjU1OWQyYTcifQ.dsw755QeMg9Omn-rY1YqRvoR5fGUBCU_z75s00FGd6w' \
+ -H 'content-length: 141' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Learn away result doctor behind.","maxScore":80,"minScore":1,"description":"Base maybe sort plant list.","estimatedTime":"1 weeks"}

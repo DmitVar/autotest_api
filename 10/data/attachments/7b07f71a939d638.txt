@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/exercises' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTE3VDE3OjQ4OjEyLjU1NzE0MiIsInVzZXJfaWQiOiI0OWQ1N2RkOS04MDU5LTQ5Y2UtODM1MS01YTllOTUwMDEzNDcifQ.Afqcb2VloPQ5V7RTEHQqcV1kajaim4ApivRQIh_cTyE' \
+ -H 'content-length: 346' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Decade probably well less example.","courseId":"f1b41bc6-4dd1-4f87-906f-cfe12ee5ba91","maxScore":78,"minScore":14,"orderIndex":87,"description":"He spring indeed American anyone. Debate usually can build.\nAgain office hand feeling simply. Mind imagine about idea able center from. Compare whole generation.","estimatedTime":"10 weeks"}

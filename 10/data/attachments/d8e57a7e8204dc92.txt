@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTE3VDE3OjQ4OjEyLjI4MzIyMCIsInVzZXJfaWQiOiI3MmMxNTM4MS04ZTA4LTRhN2UtOTQyNC01NjRlODBkZTJkMTYifQ.Jg5xIcgd5W3qwFkaCWPUL-yH7GMxtXcP8cogz5FkxAM' \
+ -H 'content-length: 294' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Discussion simply benefit house production employee.","maxScore":97,"minScore":23,"description":"He especially close simple year prevent letter.","estimatedTime":"5 weeks","previewFileId":"2aa78292-957c-49ad-89c6-e56a88a0e839","createdByUserId":"72c15381-8e08-4a7e-9424-564e80de2d16"}

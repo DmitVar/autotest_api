@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTE3VDE3OjQ4OjEwLjA2ODIyOCIsInVzZXJfaWQiOiIwZTcxY2VkZC1lZDIyLTQ2YWQtODUzNC0yYzQ4MTAyMWIzODgifQ.fRIEn0mDp3ycjYSttlWxMWHHGTfjjeRFwfMumIcDQAs' \
+ -H 'content-length: 261' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Store coach person reveal.","maxScore":76,"minScore":14,"description":"Mrs reality during crime mother ok less.","estimatedTime":"6 weeks","previewFileId":"6fa82e91-f576-4d96-b651-b806409ce034","createdByUserId":"0e71cedd-ed22-46ad-8534-2c481021b388"}

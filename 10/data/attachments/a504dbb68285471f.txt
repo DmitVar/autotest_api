@@ -1,0 +1,18 @@
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:23 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:23 Make PATCH request to http://localhost:8000/api/v1/courses/03165ae0-056b-4aa1-af5e-7f96a0bcd3da
+INFO     HTTP_CLIENT:event_hooks.py:30 Got response 200 OK from http://localhost:8000/api/v1/courses/03165ae0-056b-4aa1-af5e-7f96a0bcd3da
+INFO     BASE_ASSERTION:base.py:17 Check that status code equals to "200"
+INFO     COURSES_ASSERTIONS:courses.py:20 Check update course response
+INFO     BASE_ASSERTION:base.py:34 Check that "title" equals to Learn away result doctor behind.
+INFO     BASE_ASSERTION:base.py:34 Check that "max_score" equals to 80
+INFO     BASE_ASSERTION:base.py:34 Check that "min_score" equals to 1
+INFO     BASE_ASSERTION:base.py:34 Check that "description" equals to Base maybe sort plant list.
+INFO     BASE_ASSERTION:base.py:34 Check that "estimated_time" equals to 1 weeks
+INFO     SCHEMA_ASSERTIONS:schema.py:18 Validating JSON schema

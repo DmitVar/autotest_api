@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTE3VDE3OjQ4OjEyLjU1NzE0MiIsInVzZXJfaWQiOiI0OWQ1N2RkOS04MDU5LTQ5Y2UtODM1MS01YTllOTUwMDEzNDcifQ.Afqcb2VloPQ5V7RTEHQqcV1kajaim4ApivRQIh_cTyE' \
+ -H 'content-length: 249' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Unit chance describe.","maxScore":95,"minScore":26,"description":"Those billion upon lose continue.","estimatedTime":"9 weeks","previewFileId":"f0642cb7-ffba-486a-9010-cde116d0e7cf","createdByUserId":"49d57dd9-8059-49ce-8351-5a9e95001347"}

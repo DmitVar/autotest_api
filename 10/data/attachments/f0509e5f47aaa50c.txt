@@ -1,0 +1,11 @@
+curl -X 'POST' \
+ 'http://localhost:8000/api/v1/courses' \
+ -H 'host: localhost:8000' \
+ -H 'accept: */*' \
+ -H 'accept-encoding: gzip, deflate' \
+ -H 'connection: keep-alive' \
+ -H 'user-agent: python-httpx/0.28.1' \
+ -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI1LTExLTE3VDE3OjQ4OjA4Ljg5NDgyNSIsInVzZXJfaWQiOiJjOTNlNTk5Yy1hZjRkLTRkMjAtODI4NC1mYWY1NzE3OWFjMzAifQ.dFU8H0kibdH0Tqwcwq9glrWuoEwj0LS7x0VYndTegl0' \
+ -H 'content-length: 241' \
+ -H 'content-type: application/json' \
+ -d '{"title":"Far writer through.","maxScore":83,"minScore":29,"description":"Change least choice blood.","estimatedTime":"10 weeks","previewFileId":"e3d8bc25-3414-4465-a69e-68b8622dee2a","createdByUserId":"c93e599c-af4d-4d20-8284-faf57179ac30"}
